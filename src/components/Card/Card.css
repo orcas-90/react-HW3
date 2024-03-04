@@ -5,7 +5,7 @@
     margin:0px;
 }
 
-.Card-tittle {
+.Card-Tittle {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -15,10 +15,10 @@
     margin-left: 23px;
     margin-bottom: 0px;
 }
-.Card_hidden{
+.Card_Hidden{
     display: none;
 }
-.Card-status {
+.Card-Status {
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,22 +33,22 @@
 
 }
 
-.Card-star {
+.Card-Star {
     margin-right: 8px;
 }
-.Card-main_images {
+.Card-Main_Images {
     border-radius: 14px;
     margin-left: 1px;
     margin-right: 1px;
     margin-bottom: 10px;
 }
-.Card-swap {
+.Card-Swap {
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-.Card-color_Text {
+.Card-Color_Text {
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -57,7 +57,7 @@
     color: #2C3E4F;
 
 }
-.Card-color {
+.Card-Color {
     margin-left: 23px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -65,7 +65,7 @@
     line-height: 15.85px;
     color: #8E969B;
 }
-.Card-choise {
+.Card-Choise {
 
     margin-left: 23px;
     margin-bottom: 10px;
@@ -74,18 +74,18 @@
     align-items: center;
 
 }
-.Card-choise-color {
+.Card-Choise-color {
 
     width: 40px;
     height: 40px;
     border-radius: 10px;
 }
-.Card-size {
+.Card-Size {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.Card-color-size {
+.Card-Color-Size {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -93,14 +93,14 @@
     color: #8E969B;
 }
 
-.Card-color-size_string {
+.Card-Color-Size_String {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 500;
     line-height: 15.85px;
     color: #2C3E4F;
 }
-.Card-button{
+.Card-Button{
     display: inline-block;
     padding:15px 16px 15px 16px;
     border-radius: 10px;
@@ -115,7 +115,7 @@
     line-height: 19.5px;
     width: 50%;
 }
-.Card-button-buy{
+.Card-Button-Buy{
     display: inline-block;
     padding:15px 16px 15px 16px;
     border-radius: 10px;
@@ -130,7 +130,7 @@
     background: linear-gradient(268.87deg, #298EEB -4.73%, #4149FF 101.32%);
 }
 
-.Card-button-cont{
+.Card-Button-Cont{
     display: flex;
     align-items: center;
     gap: 7px;
@@ -139,7 +139,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.Card-cost {
+.Card-Cost {
 
     display: block;
     padding: 0px;
@@ -152,7 +152,7 @@
 
 }
 
-.Card-delivery {
+.Card-Delivery {
     font-family: Arial, Helvetica, sans-serif;
     font-family: Montserrat;
     font-size: 15px;
@@ -163,7 +163,7 @@
     color: #8E969B;
 
 }
-.Card-date {
+.Card-Date {
     font-family: Arial, Helvetica, sans-serif;
     font-family: Montserrat;
     font-size: 15px;

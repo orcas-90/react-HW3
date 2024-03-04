@@ -8,7 +8,7 @@ import './Card.css';
 
 type CardProps = {
   tittle: string;
-  starimages: string[];
+  starImages: string[];
   rating: number;
   review: number | string;
   numberBuy?: number | string;
@@ -25,7 +25,7 @@ type CardProps = {
 
 const Card: FC<CardProps> = ({
   tittle,
-  starimages,
+  starImages,
   rating,
   review,
   numberBuy,
@@ -41,54 +41,54 @@ const Card: FC<CardProps> = ({
 }) => {
   return (
     <div className={cnCard()}>
-      <h1 className={cnCard('tittle')}>{tittle}</h1>
+      <h1 className={cnCard('Tittle')}>{tittle}</h1>
 
-      <div className={cnCard('status')}>
+      <div className={cnCard('Status')}>
         <div>
-          {starimages.map((starimage) => (
-            <img className={cnCard('star')} src={starimage}></img>
+          {starImages.map((starImage) => (
+            <img className={cnCard('Star')} src={starImage}></img>
           ))}
           <span>{rating}</span>
         </div>
         <p>{review}</p>
-        <p className={cnCard({ hidden: !numberBuy })}>{numberBuy}</p>
+        {numberBuy ? <p>{numberBuy}</p> : undefined}
       </div>
 
       {cardImages.map((cardImage) => (
-        <img src={cardImage} className={cnCard('main_images')}></img>
+        <img src={cardImage} className={cnCard('Main_Images')}></img>
       ))}
 
-      <div className={cnCard('swap')}>
+      <div className={cnCard('Swap')}>
         <img src={swap}></img>
       </div>
 
-      <p className={cnCard('color_Text')}>
-        <span className={cnCard('color')}>{color}</span> {colorText}
+      <p className={cnCard('Color_Text')}>
+        <span className={cnCard('Color')}>{color}</span> {colorText}
       </p>
 
-      <div className={cnCard('choise')}>
+      <div className={cnCard('Choise')}>
         {choiseColors.map((choiseColor) => (
           <div
-            className={cnCard('choise-color')}
+            className={cnCard('Choise-Color')}
             style={{ backgroundColor: choiseColor }}
           ></div>
         ))}
       </div>
 
-      <div className={cnCard('size')}>
-        <span className={cnCard('color')}>{color}</span>
-        <span className={cnCard('color-size_string')}>{sizeString}</span>
-        <span className={cnCard('color-size')}>{sizeNumber}</span>
+      <div className={cnCard('Size')}>
+        <span className={cnCard('Color')}>{color}</span>
+        <span className={cnCard('Color-Size_String')}>{sizeString}</span>
+        <span className={cnCard('Color-Size')}>{sizeNumber}</span>
       </div>
 
-      <div className={cnCard('button-cont')}>
-        <button className={cnCard('button')}>{'В корзину'}</button>
-        <button className={cnCard('button-buy')}>
-          {'Купить сейчас'} <span className={cnCard('cost')}>{cost}</span>
+      <div className={cnCard('Button-Cont')}>
+        <button className={cnCard('Button')}>{'В корзину'}</button>
+        <button className={cnCard('Button-Buy')}>
+          {'Купить сейчас'} <span className={cnCard('Cost')}>{cost}</span>
         </button>
       </div>
-      <p className={cnCard('delivery')}>
-        {'Доставка'} <span className={cnCard('date')}>{delivery}</span>
+      <p className={cnCard('Delivery')}>
+        {'Доставка'} <span className={cnCard('Date')}>{delivery}</span>
       </p>
     </div>
   );

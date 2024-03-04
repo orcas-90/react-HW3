@@ -5,7 +5,7 @@ import swap from './swap.png';
 
 import { Card } from './components/Card/Card';
 
-const CardsData = [
+const cardsData = [
   {
     tittle:
       'Мини Портативная Медицинская сумка Аптечка медицинские аварийные наборы Органайзер уличная домашняя медицина сумка для лекарств',
@@ -27,22 +27,22 @@ const CardsData = [
 const App = () => {
   return (
     <div className="App">
-      {CardsData.map((CardData) => (
+      {cardsData.map((cardData) => (
         <Card
-          tittle={CardData.tittle}
-          starimages={CardData.starimages}
-          rating={CardData.rating}
-          review={CardData.review + ' отзыва'}
-          numberBuy={CardData.numberBuy + '  купили'}
-          cardImages={CardData.cardImages}
-          swap={CardData.swap}
+          tittle={cardData.tittle}
+          starImages={cardData.starimages}
+          rating={cardData.rating}
+          review={cardData.review + ' отзыва'}
+         // numberBuy={cardData.numberBuy + '  купили'}
+          cardImages={cardData.cardImages}
+          swap={cardData.swap}
           color={'Цвет: '}
-          colorText={CardData.colorText}
-          choiseColors={CardData.choiseColors}
-          sizeString={CardData.sizeString}
-          sizeNumber={CardData.sizeNumber}
-          cost={CardData.cost + ' р'}
-          delivery={CardData.delivery}
+          colorText={cardData.colorText}
+          choiseColors={cardData.choiseColors}
+          sizeString={cardData.sizeString}
+          sizeNumber={cardData.sizeNumber}
+          cost={cardData.cost + ' р'}
+          delivery={cardData.delivery}
         />
       ))}
     </div>
